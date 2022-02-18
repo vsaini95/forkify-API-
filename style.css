@@ -210,43 +210,48 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 1rem 1.5rem;
-  width: calc(70% - 10px);
-  height: auto;
+  width: calc(90% - 20px);
   border-radius: 0.5rem;
-  box-shadow: 0 0 5px 0 rgb(155, 154, 154);
-  text-align: center;
-  background-image: url("images/kabab.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
 }
-.modal-content p {
-  margin-top: 20px;
-  color: hsl(211, 10%, 45%);
-  line-height: 1.6rem;
-  margin-bottom: 16px;
+.disp {
+  width: 30%;
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 5px 0 rgb(153, 153, 153);
 }
-.modal-content .no {
-  padding: 10px 30px;
-  color: #fff;
-  background-color: hsl(211, 10%, 45%);
-  margin-right: 20px;
-  border-radius: 6px;
-  text-transform: uppercase;
+.disp-left .name {
+  margin-bottom: 20px;
 }
-.modal-content .yes {
-  padding: 10px 30px;
-  color: #fff;
-  background-color: hsl(358, 79%, 66%);
-  border-radius: 6px;
-  text-transform: uppercase;
+.detail {
+  color: rgb(90, 90, 90);
+  font-weight: 600;
 }
-
-.modal-content .no:hover {
-  background-color: darkgray;
+.left-footer {
+  padding-top: 50px;
 }
-
+.numberDiv,
+.tagDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.numberDiv .number {
+  font-size: 20px;
+  font-weight: 500;
+}
+.tagDiv .tag {
+  color: rgb(90, 90, 90);
+}
+.img {
+  width: 40%;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgb(161, 161, 161);
+}
+.img img {
+  width: 100%;
+}
 .show-modal {
   opacity: 1;
   visibility: visible;
